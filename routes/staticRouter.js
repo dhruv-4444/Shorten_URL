@@ -6,7 +6,7 @@ const router = express.Router();
 router.get("/", async (req, res) => {
     try {
       // Fetch all URLs from the database
-      const allUrls = await URL.find({}); // assuming URL is your model
+      const allUrls = await URL.find(); // assuming URL is your model
   
       // Pass the URLs to the view (home.ejs)
       return res.render("home", { urls: allUrls || [] }); // Ensure urls is passed

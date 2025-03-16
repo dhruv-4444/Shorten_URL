@@ -16,7 +16,7 @@ app.set("views",path.resolve("./views"))
 
 
 
-connectToMongoDB("mongodb://127.0.0.1:27017/short-url").then(() =>
+connectToMongoDB("mongodb+srv://jdhruv90235:dhruv1192003@cluster0.arbb3.mongodb.net/abc?retryWrites=true&w=majority&appName=Cluster0").then(() =>
   console.log("db connected")
 );
 
